@@ -1,0 +1,174 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+$md-hi-white: (
+  50 : #ffffff,
+  100 : #ffffff,
+  200 : #ffffff,
+  300 : #ffffff,
+  400 : #ffffff,
+  500 : #ffffff,
+  600 : #ffffff,
+  700 : #ffffff,
+  800 : #ffffff,
+  900 : #ffffff,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #ffffff,
+  A700 : #ffffff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+$md-mcgpalette0: (
+  50 : #e1e4e9,
+  100 : #b3bcc9,
+  200 : #8190a5,
+  300 : #4e6480,
+  400 : #284265,
+  500 : #02214a,
+  600 : #021d43,
+  700 : #01183a,
+  800 : #011432,
+  900 : #010b22,
+  A100 : #5e7dff,
+  A200 : #2b54ff,
+  A400 : #002ff7,
+  A700 : #002ade,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$md-hi-red: (
+  50 : #fce3e4,
+  100 : #f8b9ba,
+  200 : #f38a8d,
+  300 : #ee5b5f,
+  400 : #eb373c,
+  500 : #e7141a,
+  600 : #e41217,
+  700 : #e00e13,
+  800 : #dd0b0f,
+  900 : #d70608,
+  A100 : #ffffff,
+  A200 : #ffcccc,
+  A400 : #ff999a,
+  A700 : #ff8080,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+$md-hi-blue: (
+  50 : #e1e4e9,
+  100 : #b3bcc9,
+  200 : #8190a5,
+  300 : #4e6480,
+  400 : #284265,
+  500 : #02214a,
+  600 : #021d43,
+  700 : #01183a,
+  800 : #011432,
+  900 : #010b22,
+  A100 : #5e7dff,
+  A200 : #2b54ff,
+  A400 : #002ff7,
+  A700 : #002ade,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$md-hi-black: (
+  50 : #e0e0e0,
+  100 : #b3b3b3,
+  200 : #808080,
+  300 : #4d4d4d,
+  400 : #262626,
+  500 : #000000,
+  600 : #000000,
+  700 : #000000,
+  800 : #000000,
+  900 : #000000,
+  A100 : #a6a6a6,
+  A200 : #8c8c8c,
+  A400 : #737373,
+  A700 : #666666,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+$hi-app-primary: mat-palette($md-hi-white);
+$hi-app-accent: mat-palette($md-hi-blue);
+$hi-app-warn: mat-palette($md-hi-red);
+$hi-app-theme: mat-light-theme($hi-app-primary, $hi-app-accent, $hi-app-warn);
+@include angular-material-theme($hi-app-theme);

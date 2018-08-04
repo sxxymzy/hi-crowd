@@ -1,0 +1,25 @@
+body {
+  //margin: 0;
+  //padding: 0;
+  background: white;
+}
+
+* {
+  font-family: "Microsoft YaHei", "SimHei", sans-serif;
+}
+
+//$timeout: 0.5s;
+//$prop: transform;
+//*.yxd-transition {
+//  &, & * {
+//    -webkit-transition: $prop $timeout;
+//    -moz-transition: $prop $timeout;
+//    -ms-transition: $prop $timeout;
+//    -o-transition: $prop $timeout;
+//    transition: $prop $timeout;
+//  }
+//}
+
+*:focus {
+  outline: none;
+}
