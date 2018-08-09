@@ -9,11 +9,14 @@
   <button fxHide fxShow.lt-sm mat-icon-button [matMenuTriggerFor]="smMenu">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>"人工智能"微任务众包平台</span>
+  <div style="cursor: pointer;" routerLink="/home">
+    <mat-icon svgIcon="hi-logo"></mat-icon>
+    <span>"人工智能"微任务众包平台</span>
+  </div>
   <span class="hi-spacer"></span>
-  <button fxHide.lt-sm i18n mat-button routerLink="/home" fragment="can-do">我们能做什么</button>
-  <button fxHide.lt-sm i18n mat-button routerLink="/home" fragment="work-flow">我们的工作流程</button>
-  <button fxHide.lt-sm i18n mat-button routerLink="/home" fragment="why-us">为什么选择我们</button>
+  <button fxHide.lt-sm i18n mat-button routerLink="home" fragment="can-do">我们能做什么</button>
+  <button fxHide.lt-sm i18n mat-button routerLink="home" fragment="work-flow">我们的工作流程</button>
+  <button fxHide.lt-sm i18n mat-button routerLink="home" fragment="why-us">为什么选择我们</button>
   <!--<button fxHide.lt-sm mat-button i18n routerLink="/login">登录/注册</button>-->
 </mat-toolbar>
 <router-outlet></router-outlet>

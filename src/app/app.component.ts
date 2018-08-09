@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {MatIconRegistry} from '@angular/material';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'hi-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hi';
+
+  constructor(private matIcon: MatIconRegistry, private domSan: DomSanitizer) {
+    this.matIcon.addSvgIcon('hi-logo', this.domSan.bypassSecurityTrustResourceUrl('assets/hi-logo.svg'));
+  }
 }

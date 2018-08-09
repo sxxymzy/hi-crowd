@@ -4,12 +4,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 import {AppComponent} from './app.component';
-import {MatButtonModule, MatMenuModule, MatToolbar} from '@angular/material';
-import { HomeComponent } from './home/home.component';
+import {MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule} from '@angular/material';
+import {HomeComponent} from './home/home.component';
 import {AppRoutingModule} from './app-routing.module';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {HttpClientModule} from '@angular/common/http';
 
 const matImports = [
-  MatToolbar,
+  MatToolbarModule,
+  MatIconModule,
   MatButtonModule,
   MatMenuModule
 ];
@@ -22,7 +25,9 @@ const matImports = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     AppRoutingModule,
+    HttpClientModule,
     ...matImports
   ],
   providers: [],

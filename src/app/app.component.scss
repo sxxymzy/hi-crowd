@@ -1,5 +1,16 @@
 .hi-nav-bar {
+  z-index: 999;
+  top: 0;
+  position: fixed;
+  height: 52px;
+  padding-left: 7vw;
+  padding-right: 7vw;
+
   .hi-spacer {
     flex: 1 1 auto;
+  }
+  button {
+    font-weight: 400;
+    font-size: .8rem;
   }
 }
