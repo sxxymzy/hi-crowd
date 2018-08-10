@@ -9,16 +9,16 @@ $color-theme-blue: #02214a;
 $color-theme-orange: #FF6600;
 section {
   min-height: 95vh;
+  padding-top: 45px;
+  padding-left: 100px;
+  padding-right: 100px;
   * {
     color: $color-theme-blue;
   }
   &:last-child{
-    min-height: 85vh;
+    min-height: 78vh;
   }
   &:not(:first-child) {
-    padding-top: 45px;
-    padding-left: 100px;
-    padding-right: 100px;
     .section-title {
       font-size: 1.5rem;
       position: relative;
