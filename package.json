@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "npm run build; ngh -d dist"
+    "deploy": "npm run build; ngh -d dist",
+    "i18n": "ng xi18n --i18n-locale zh-Hans --output-path locale "
   },
   "private": true,
   "dependencies": {

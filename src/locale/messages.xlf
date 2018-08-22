@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="zh-Hans" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3e6aa612ae6bcc92da6ba4f51cfa8bf4ce3944e2" datatype="html">
+        <source>回到顶部</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b682b8243e1cca071b28584aeba72ab30a4ba35" datatype="html">
+        <source>我们能做什么</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="733c883ba28746b458e0c6ef2d9a7bc476a675dd" datatype="html">
+        <source>我们的工作流程</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4eccd4a245079fe6066e8ed8f6269024330a9ceb" datatype="html">
+        <source>为什么选择我们</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="42d67a5741b1e76158e9cca663660ef6cc4c4ae5" datatype="html">
+        <source>您的需求就是我们的追求</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71cdede758d25f4bdebd93673b920b682178afbe" datatype="html">
+        <source>专为远程需求而设计</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6232a999a08fc223cf218c14b6b267ef47c176c5" datatype="html">
+        <source>现在开始使用</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="673a9028c6e560af91f626c45990173ce14f61fd" datatype="html">
+        <source>视频微任务</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c30bc4c13dcde30aafcea927c843997c505ca5f2" datatype="html">
+        <source>视频微任务是指以视频为处理单位，且单次处理时长不超过五分钟的视频处理任务。</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f067a5773ca3673fc5aa1d882880c117bd273e0e" datatype="html">
+        <source>图片微任务</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0f32a196de49bd332c2d8f438125d5e6fb7ddcc" datatype="html">
+        <source>图片微任务是指以一张或多张图片为处理单元，且单次处理时长不超过5分钟的处理任务。</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ac39cad2d874dc210a58244ece691bd2456db0c0" datatype="html">
+        <source>
+    本平台专为需要通过视频或者图片<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>远程解决的问题场景<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>设计。 使用场景包含但不限于：
+    <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>数据标注<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>、<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>视频图像处理<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>、<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>视频行为判断<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>等。
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2c6e053a60e86f609019de9e4415d0339ff13ae6" datatype="html">
+        <source>作为客户，从服务开始到完成只需四步</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5aea89fde95812466bc704975504b2db0192f684" datatype="html">
+        <source>第一步</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a4c7b3c17ba05fbb232407861a7d05db9e26d9d8" datatype="html">
+        <source>留下联系方式</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ae54b6806b234ab553cb580c8744dac2f7f100f" datatype="html">
+        <source>第二步</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="50f83b9ceeae2afed4047abddc97fe32c7b23fba" datatype="html">
+        <source>沟通细节</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="932f0815fb906b86fc2fc2fc92cd1efde1af2131" datatype="html">
+        <source>第三步</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e422999264cf86db9dfa5830cea4fd607621b6dd" datatype="html">
+        <source>上传视频或图片</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fe7b76bcfb89095ee6eb80ee861f6e8311bb2099" datatype="html">
+        <source>第四步</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d24c9c7f593d8a653347aa64eb11e3346c2a28d" datatype="html">
+        <source>等待人工处理结果</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71fe2779661120b3843c41034617beb65b6b048e" datatype="html">
+        <source>查看案例</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2f4dd835071c87951a4665e6c539e2ccad6af49e" datatype="html">
+        <source>快速启动</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="319649415b61f08c7ecf0f6238651450fdd44c80" datatype="html">
+        <source>无需开发任何复杂系统，需求分析结束后即可快速启动。</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="670c9913cb779a71c4704e95a157c23923c7c970" datatype="html">
+        <source>节约资金</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e64cd1f8dba14221016fb4aa1f31df732f6c58d1" datatype="html">
+        <source>无需花费大量资金开发人工智能系统，无需标注数据，无需购买维护服务器等硬件设备，只需按量支付任务薪酬即可，开发费用全免。</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4f4634698f94625e4f9cd5c0c58bcd8d5bf53c36" datatype="html">
+        <source>零风险</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e644761e5aa54f661a8785cdee0a3df62a9dea6e" datatype="html">
+        <source>只要客户需求清晰，其他工作都由平台承担，且数据全部加密存储。</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

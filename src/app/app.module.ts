@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 import {AppComponent} from './app.component';
-import {MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatDividerModule, MatIconModule, MatMenuModule, MatToolbarModule} from '@angular/material';
 import {HomeComponent} from './home/home.component';
 import {AppRoutingModule} from './app-routing.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -14,7 +14,9 @@ const matImports = [
   MatToolbarModule,
   MatIconModule,
   MatButtonModule,
-  MatMenuModule
+  MatMenuModule,
+  MatCardModule,
+  // MatDividerModule
 ];
 
 @NgModule({

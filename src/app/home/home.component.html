@@ -1,89 +1,125 @@
-<section id="slogan">
-  <div class="slogan-title bigger">您的需求就是我们的追求</div>
-  <div class="slogan-title smaller">专为远程需求而设计</div>
-  <button mat-raised-button color="primary">现在开始使用</button>
+<section id="slogan" ngClass.lt-sm="lt-sm">
+  <div class="slogan-title bigger" i18n>人工vs智能—众包的力量</div>
+  <div class="slogan-title smaller" i18n>人工智能贵不可攀？众包低成本为您远程解决繁琐问题！</div>
+  <button mat-raised-button color="primary" i18n (click)="showPanel()">现在开始使用</button>
 </section>
 
-<section id="can-do">
-  <div class="section-title">我们能做什么</div>
-  <div class="section-content" fxLayout="row" fxLayoutAlign="space-around center">
-    <div fxFlex fxLayout="column" fxLayoutAlign="center center">
-      <img class="poster" src="assets/img/can-do/video-micro-task/video-micro-task.png">
-      <div class="title">视频微任务</div>
-      <div class="content">视频微任务是指以视频为处理单位，且单次处理时长不超过五分钟的视频处理任务。</div>
-    </div>
-    <div fxFlex fxLayout="column" fxLayoutAlign="center center">
-      <img class="poster" src="assets/img/can-do/img-micro-task/img-micro-task.png">
-      <div class="title">图片微任务</div>
-      <div class="content">图片微任务是指以一张或多张图片为处理单元，且单次处理时长不超过5分钟的处理任务。</div>
-    </div>
+<section id="for-whom" ngClass.lt-sm="lt-sm">
+  <div class="section-title" i18n>我们解决谁的问题</div>
+  <div class="section-content" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <mat-card fxLayout="column" fxLayoutAlign="center center">
+      <mat-card-title i18n>为琐事困扰的个人</mat-card-title>
+      <img mat-card-image class="poster" src="assets/img/for-whom/for-person.jpg">
+      <mat-card-content i18n>
+        例如：<b>监控寻人／物</b>、<b>数据统计整理</b>、<b>信息搜集</b>
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxLayout="column" fxLayoutAlign="center center">
+      <mat-card-title i18n>预算受限的初创企业</mat-card-title>
+      <img mat-card-image class="poster" src="assets/img/for-whom/for-corp.jpg">
+      <mat-card-content>
+        <div class="content" i18n>
+          例如：<b>客流视频计数</b>、<b>数据标注</b>、<b>语音检测</b>等
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxLayout="column" fxLayoutAlign="center center">
+      <mat-card-title i18n>更多可能</mat-card-title>
+      <img mat-card-image class="poster" src="../../assets/img/more.svg">
+      <mat-card-content>
+        <div class="content" i18n>
+          我们拥抱更多可能，欢迎您提出更多的想法！
+        </div>
+      </mat-card-content>
+    </mat-card>
   </div>
-  <div class="section-footer">
-    本平台专为需要通过视频或者图片<b>远程解决的问题场景</b>设计。 使用场景包含但不限于：
-    <br><b>数据标注</b>、<b>视频图像处理</b>、<b>视频行为判断</b>等。
+  <div class="section-footer" i18n>
+    无论个人还是企业，<b>只要您认为您的业务可以被远程处理</b>，我们都非常欢迎您前来咨询！
   </div>
-
 </section>
 
-<section id="work-flow">
-  <div class="section-title">我们的工作流程</div>
-  <div class="section-img-content" fxLayout="row" fxLayoutAlign="space-around center">
-    <img src="assets/img/work-flow/flow1.svg">
-    <img src="assets/img/work-flow/flow2.svg">
-    <img src="assets/img/work-flow/flow3.svg">
+<section id="can-do" ngClass.lt-sm="lt-sm">
+  <div class="section-title" i18n>我们能做什么</div>
+  <div class="section-content" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <mat-card fxLayout="column" fxLayoutAlign="center center">
+      <mat-card-title i18n>视频任务处理</mat-card-title>
+      <img mat-card-image class="poster" src="../../assets/img/can-do/video-micro-task.png">
+      <mat-card-content i18n>
+        将需求拆分为<b>小段视频</b>进行处理
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxLayout="column" fxLayoutAlign="center center">
+      <mat-card-title i18n>图片任务处理</mat-card-title>
+      <img mat-card-image class="poster" src="../../assets/img/can-do/img-micro-task.png">
+      <mat-card-content i18n>
+        将需求拆分为<b>图片集</b>进行处理
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxLayout="column" fxLayoutAlign="center center">
+      <mat-card-title i18n>更多</mat-card-title>
+      <img mat-card-image class="poster" src="../../assets/img/more.svg">
+      <mat-card-content i18n>
+        我们拥抱更多可能，欢迎您提出更多的想法！
+      </mat-card-content>
+    </mat-card>
   </div>
+  <div class="section-footer" i18n>
+    本平台大部分的成功案例都是通过视频或者图片可以<b>远程解决的问题</b>。但并不限于此，我们永远欢迎更多的可能性！
+  </div>
+</section>
 
-  <div class="section-subject">作为客户，从服务开始到完成只需四步</div>
+<section id="work-flow" ngClass.lt-sm="lt-sm">
+  <div class="section-title" i18n>我们的工作流程</div>
+  <div class="section-subject" i18n>作为客户，从下单到完成只需三步</div>
 
-  <div class="section-flow-content" fxLayout="row" fxLayoutAlign="space-around center">
+  <div class="section-flow-content" fxLayout="row wrap" fxLayoutAlign="space-around center">
     <button mat-fab color="primary">
-      <span>第一步</span>
-      <span>留下联系方式</span>
+      <span i18n>第一步</span>
+      <span i18n>沟通需求，支付订金</span>
     </button>
     <button mat-fab color="primary">
-      <span>第二步</span>
-      <span>沟通细节</span>
+      <span i18n>第二步</span>
+      <span i18n>上传视频或图片</span>
     </button>
     <button mat-fab color="primary">
-      <span>第三步</span>
-      <span>上传视频或图片</span>
-    </button>
-    <button mat-fab color="primary">
-      <span>第四步</span>
-      <span>等待人工处理结果</span>
+      <span i18n>第三步</span>
+      <span i18n>等待人工处理结果</span>
     </button>
     <button mat-fab class="finish">
       <span>完成</span>
-      <span>收到结果并支付费用</span>
+      <span>收到结果，支付尾款</span>
     </button>
   </div>
-  <div class="view-example" fxLayout="row" fxLayoutAlign="space-around center">
-    <button mat-flat-button>查看案例</button>
+  <div class="section-footer" i18n>
+    我们的流程简单可控，因此我们可以为您提供非常个性化的工作流程。
   </div>
+  <!--<div class="view-example" fxLayout="row" fxLayoutAlign="space-around center">-->
+  <!--<button mat-flat-button i18n>查看案例</button>-->
+  <!--</div>-->
 
 </section>
 
-<section id="why-us">
-  <div class="section-title">为什么选择我们</div>
-  <div class="section-content" fxLayout="row" fxLayoutAlign="space-around center">
-    <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+<section id="why-us" ngClass.lt-sm="lt-sm">
+  <div class="section-title" i18n>为什么选择我们</div>
+  <div class="section-content" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <div fxLayout="column" fxLayoutAlign="center center">
       <img class="poster" src="assets/img/why-us/fast-boot.svg">
-      <div class="title">快速启动</div>
-      <div class="content">无需开发任何复杂系统，需求分析结束后即可快速启动。</div>
+      <div class="title" i18n>快速启动</div>
+      <div class="content" i18n>无需开发任何复杂系统，需求分析结束后即可快速启动。</div>
     </div>
-    <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="column" fxLayoutAlign="center center">
       <img class="poster" src="assets/img/why-us/save-money.svg">
-      <div class="title">节约资金</div>
-      <div class="content">无需花费大量资金开发人工智能系统，无需标注数据，无需购买维护服务器等硬件设备，只需按量支付任务薪酬即可，开发费用全免。</div>
+      <div class="title" i18n>节约资金</div>
+      <div class="content" i18n>无需开发人工智能系统，无需标注数据，无需购买服务器，为您节省几十万的资金！</div>
     </div>
-    <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="column" fxLayoutAlign="center center">
       <img class="poster" src="assets/img/why-us/zero-risk.svg">
-      <div class="title">零风险</div>
-      <div class="content">只要客户需求清晰，其他工作都由平台承担，且数据全部加密存储。</div>
+      <div class="title" i18n>数据保护</div>
+      <div class="content" i18n>我们永远不保存您的业务数据，处理完成即永久删除。</div>
     </div>
   </div>
   <div class="start-now" fxLayout="row" fxLayoutAlign="space-around center">
-    <button mat-raised-button color="accent">现在开始使用</button>
+    <button mat-raised-button color="accent" i18n (click)="showPanel()">现在开始使用</button>
   </div>
 
 </section>

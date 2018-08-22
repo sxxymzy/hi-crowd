@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
+declare var _MEIQIA: any;
+
 @Component({
   selector: 'hi-home',
   templateUrl: './home.component.html',
@@ -11,6 +13,10 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  showPanel() {
+    _MEIQIA('showPanel');
   }
 
 }

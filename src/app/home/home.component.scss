@@ -5,40 +5,75 @@
 
 }
 
+@mixin border-radius($x) {
+  -webkit-border-radius: $x;
+  -moz-border-radius: $x;
+  border-radius: $x;
+}
+
 $color-theme-blue: #02214a;
 $color-theme-orange: #FF6600;
-section {
-  min-height: 95vh;
-  padding-top: 45px;
-  padding-left: 100px;
-  padding-right: 100px;
-  * {
-    color: $color-theme-blue;
+@mixin title-orange-shadow-effect() {
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    $width: 20px;
+    width: $width;
+    margin-left: - $width/2;
+    height: 2px;
+    background: $color-theme-orange;
+    @include box-shadow(0px, -1px, 5px, 0px, $color-theme-orange);
   }
-  &:last-child{
+}
+
+section {
+  & {
+    min-height: 95vh;
+    padding: 45px 100px;
+  }
+  &:last-child {
     min-height: 78vh;
   }
-  &:not(:first-child) {
-    .section-title {
-      font-size: 1.5rem;
-      position: relative;
-      width: 100%;
-      text-align: center;
-      line-height: 1.8;
-      &:after {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        $width: 20px;
-        width: $width;
-        margin-left: - $width/2;
-        height: 2px;
-        background: $color-theme-orange;
-        @include box-shadow(0px, -1px, 5px, 0px, $color-theme-orange);
+  &:nth-child(odd) {
+    background: #F2F3F7;
+  }
+  & * {
+    color: $color-theme-blue;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 1.8;
+    @include title-orange-shadow-effect();
+  }
+  .section-content {
+    margin-bottom: 100px;
+    & > mat-card, & > div {
+      margin-top: 70px;
+      width: 300px;
+      max-width: 80vw;
+      img.poster {
+        margin-bottom: 15px;
+        width: 80%;
+      }
+      mat-card-title, div.title {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+      mat-card-content, div.content {
+        //width: 50%;
+        font-size: 0.7rem;
+        text-align: center;
       }
     }
+  }
+  .section-footer {
+    text-align: center;
   }
 
   &#slogan {
@@ -62,119 +97,124 @@ section {
     button {
       width: 320px;
       margin-bottom: 30px;
-      max-width: 80vw;
+      max-width: 100%;
       min-height: 40px;
       font-size: 1rem;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
+      @include border-radius(5px);
     }
 
+  }
+
+  &#for-whom {
   }
 
   &#can-do {
-    .section-content {
-      > div {
-        margin-top: 80px;
-        img.poster {
-          width: 35%;
-          margin-bottom: 15px;
-        }
-        div.title {
-          font-size: 1rem;
-          margin-bottom: 15px;
-        }
-        div.content {
-          width: 45%;
-          font-size: 0.7rem;
-          text-align: center;
-        }
-      }
-      margin-bottom: 100px;
-    }
-    .section-footer {
-      text-align: center;
-    }
+  }
+
+  &#can-do, &#for-whom {
   }
 
   &#work-flow {
-    background: #F2F3F7;
-    padding-right: 100px;
-    padding-left: 100px;
-    .section-img-content {
-      margin-top: 20px;
-      img {
-        width: 28%;
-      }
-      margin-bottom: 50px;
-    }
     .section-subject {
       font-size: 1.2rem;
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 120px;
     }
     .section-flow-content {
+      margin-bottom: 120px;
       button {
-        $size: 100px;
+        $size: 120px;
         width: $size;
         height: $size;
+        margin: 25px;
         span {
           display: block;
           &:first-child {
-
           }
           &:last-child {
-            font-size: 0.5rem;
+            font-size: 0.6rem;
           }
         }
-      }
-      button.finish {
-        * {
-          color: white;
+        &.finish {
+          * {
+            color: white;
+          }
+          background: $color-theme-orange;
         }
-        background: $color-theme-orange;
-      }
-      margin-bottom: 50px;
-    }
-
-    .view-example {
-      button {
-        margin: 0 auto;
-        background: #E0E0E0;
-        width: 320px;
-        max-width: 80vw;
       }
     }
-
   }
 
   &#why-us {
     .section-content {
+      margin-bottom: 110px;
       > div {
-        margin-top: 80px;
+        margin-top: 90px;
         img.poster {
           width: 35%;
-          margin-bottom: 15px;
-        }
-        div.title {
-          font-size: 1rem;
-          margin-bottom: 15px;
-        }
-        div.content {
-          width: 80%;
-          font-size: 0.7rem;
-          text-align: center;
         }
       }
-      margin-bottom: 50px;
     }
     div.start-now {
       button {
         color: white;
         width: 300px;
         max-width: 80vw;
+        margin-bottom: 100px;
       }
     }
   }
 }
 
+// lt-sm styles
+section.lt-sm {
+  padding: 20px;
+  .section-title {
+    font-size: 1.2rem;
+  }
+  .section-content {
+    > mat-card {
+      margin-top: 20px;
+      img.poster {
+        width: 80%;
+      }
+      div.content {
+        width: 100%;
+      }
+    }
+    margin-bottom: 10px;
+  }
+  .section-footer {
+    font-size: 0.7rem;
+    color: $color-theme-orange;
+  }
+
+  &#slogan {
+
+    .slogan-title {
+      &.bigger {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      &.smaller {
+        font-size: 0.8rem;
+        margin-bottom: 70px;
+      }
+    }
+  }
+  &#for-whom {
+
+  }
+  &#can-do {
+
+  }
+  &#work-flow {
+    .section-subject {
+      margin-bottom: 20px;
+    }
+  }
+  &#why-us {
+
+  }
+}
